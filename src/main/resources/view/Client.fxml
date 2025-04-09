@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #344b52;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapplication.controller.ClientConto">
+   <children>
+      <Label layoutX="211.0" layoutY="25.0" text="Client" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="40.0" layoutY="71.0" prefHeight="443.0" prefWidth="420.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <TextField fx:id="txtMessage" layoutX="40.0" layoutY="520.0" prefHeight="46.0" prefWidth="420.0" promptText="   Message..." style="-fx-background-radius: 100;" />
+      <Button layoutX="412.0" layoutY="520.0" mnemonicParsing="false" onAction="#sentMessageToServer" prefHeight="46.0" prefWidth="48.0" style="-fx-background-radius: 100;">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sent.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
