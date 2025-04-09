@@ -15,7 +15,10 @@
             <Font size="31.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="40.0" layoutY="71.0" prefHeight="443.0" prefWidth="420.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+      <AnchorPane layoutX="40.0" layoutY="71.0" prefHeight="443.0" prefWidth="420.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <TextArea fx:id="txtArea" layoutX="13.0" layoutY="12.0" prefHeight="420.0" prefWidth="395.0" />
+         </children></AnchorPane>
       <TextField fx:id="txtMessage" layoutX="40.0" layoutY="520.0" prefHeight="46.0" prefWidth="420.0" promptText="   Message..." style="-fx-background-radius: 100;" />
       <Button layoutX="412.0" layoutY="520.0" mnemonicParsing="false" onAction="#sentMessageToServer" prefHeight="46.0" prefWidth="48.0" style="-fx-background-radius: 100;">
          <graphic>
